@@ -6,22 +6,22 @@ const path = require("path");
 const hbs = require("hbs");
 const bcrypt = require("bcryptjs");
 
-const mongoose = require("mongoose");
+// const mongoose = require("mongoose");
 
-mongoose
-  .connect(
-    "mongodb+srv://Manthan6296:Mkp-6296@cluster0.yysjuox.mongodb.net/Registration_DB"
-  )
-  .then(function () {
-    console.log("Successfully connected to MongoDB");
-  })
-  .catch((err) => {
-    console.log("Could not connect to MongoDB" + err);
-  });
+// mongoose
+//   .connect(
+//     "mongodb+srv://Manthan6296:Mkp-6296@cluster0.yysjuox.mongodb.net/Registration_DB"
+//   )
+//   .then(function () {
+//     console.log("Successfully connected to MongoDB");
+//   })
+//   .catch((err) => {
+//     console.log("Could not connect to MongoDB" + err);
+//   });
 
 const app = express();
 
-// require("./db/conn");
+require("./db/conn");
 const UserCollection = require("./models/users");
 const { json } = require("express");
 
