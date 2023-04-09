@@ -12,7 +12,7 @@ require("./db/conn");
 const UserCollection = require("./models/users");
 const { json } = require("express");
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 const static_path = path.join(__dirname, "../public");
 const templates_path = path.join(__dirname, "../templates/views");
@@ -33,14 +33,14 @@ app.get("/", function (req, res) {
   res.render("index");
 });
 
-// app.get() for /home page
+// app.get() for /about page
 app.get("/about", function (req, res) {
   res.render("about");
 });
 
-// app.get() for /registration page
-app.get("/registration", function (req, res) {
-  res.render("registration");
+// app.get() for /register page
+app.get("/register", function (req, res) {
+  res.render("register");
 });
 
 // app.get() for /login page
@@ -48,8 +48,8 @@ app.get("/login", function (req, res) {
   res.render("login");
 });
 
-// app.post() for /registration page
-app.post("/registration", async function (req, res) {
+// app.post() for /register page
+app.post("/register", async function (req, res) {
   try {
     const userPassword = req.body.password;
     const userConfirmPassword = req.body.confirmPassword;
@@ -65,7 +65,7 @@ app.post("/registration", async function (req, res) {
       const registered = await registerUser.save();
       res.status(201).render("login");
     } else {
-      res.send("Passwords are not matching");
+      res.send("<h1>Passwords are not matching</h1>");
     }
   } catch (error) {
     res.status(400).send(error);
@@ -83,10 +83,10 @@ app.post("/login", async function (req, res) {
     if (findEmail.dbPassword === userPassword) {
       res.status(201).render("about");
     } else {
-      res.send("Invalid Login Details");
+      res.send("<h1>Invalid Login Credentials</h1>");
     }
   } catch (error) {
-    res.status(400).send("Invalid Details");
+    res.status(400).send("<h1>Invalid Credentials</h1>");
   }
 });
 
