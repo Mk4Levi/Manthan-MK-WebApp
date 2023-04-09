@@ -72,7 +72,7 @@ app.post("/register", async function (req, res) {
   }
 });
 
-// app.post() for /login page
+// app.post() for /login page :
 app.post("/login", async function (req, res) {
   try {
     const userEmail = req.body.email;
