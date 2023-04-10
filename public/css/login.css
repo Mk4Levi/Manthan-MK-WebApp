@@ -3,7 +3,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: #96e3ff;
+  background: #c3efff;
 }
 
 .user_card {
@@ -49,7 +49,7 @@ html {
 
 .login_btn {
   width: 150%;
-  background-color: #0000ff ;
+  background-color: #0000ff;
   color: white !important;
 }
 
@@ -59,7 +59,7 @@ html {
 } */
 
 .login_btn:hover {
-    background-color: #a200ff;
+  background-color: #a200ff;
 }
 .login_container {
   padding: 1rem;
@@ -80,21 +80,21 @@ html {
 }
 
 #signup {
-    color: #0000ffc5;
+  color: #0000ffc5;
 }
 
 #signup:hover {
-    color: aliceblue;
+  color: aliceblue;
 }
 
 #forgot:hover {
-    color: aliceblue;
+  color: aliceblue;
 }
 
 #forgot {
-    color: #0000ffc5;
+  color: #0000ffc5;
 }
 
 .form-container {
-    padding-top: 20px;
+  padding-top: 20px;
 }

@@ -11,7 +11,7 @@ require("./db/conn");
 const UserCollection = require("./models/users");
 const { json } = require("express");
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000;
 
 const static_path = path.join(__dirname, "../public");
 const templates_path = path.join(__dirname, "../templates/views");
@@ -32,9 +32,9 @@ app.get("/", function (req, res) {
   res.render("index");
 });
 
-// app.get() for /about page
-app.get("/about", function (req, res) {
-  res.render("about");
+// app.get() for /aboutmk page
+app.get("/aboutmk", function (req, res) {
+  res.render("aboutmk");
 });
 
 // app.get() for /register page
@@ -80,7 +80,7 @@ app.post("/login", async function (req, res) {
     const findEmail = await UserCollection.findOne({ dbEmail: userEmail });
 
     if (findEmail.dbPassword === userPassword) {
-      res.status(201).render("about");
+      res.status(201).render("aboutmk");
     } else {
       res.send("<h1>Invalid Login Credentials</h1>");
     }

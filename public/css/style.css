@@ -1,12 +1,16 @@
-
 /* body {
     min-height: 1000px;
 } */
 
 h1 {
-    color: blue;
+  color: blue;
+}
+
+#mk-signup {
+  padding: 5px;
+  margin-bottom: 5px;
 }
 
 footer {
-    text-align: center;
+  text-align: center;
 }
