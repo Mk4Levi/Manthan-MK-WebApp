@@ -1,7 +1,7 @@
 {
-  "name": "manthan-mk-web-app",
-  "version": "1.0.0",
-  "description": "manthan-mk-web-app",
+  "name": "mk-backend-web-app",
+  "version": "0.1.0",
+  "description": "manthan-mk backend web-app",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
