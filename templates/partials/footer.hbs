@@ -91,7 +91,7 @@
               target="_blank"
             >Gmail<i class="bx bxl-twitter"></i></a>
             <a
-              href="https://discord.io/manthan-discord"
+              href="https://discord.me/manthan-discord-server"
               class="twitter"
               target="_blank"
             >Discord<i class="bx bxl-twitter"></i></a>            
@@ -103,14 +103,22 @@
     </div>
   </div>
 
-  <div class="container footer-bottom clearfix">
+  <div class="container footer-bottom clearfix">                
+
     <div class="copyright">
-      Copyright &copy; 2023 &nbsp;
-      <strong><span> Manthan-MK </span></strong>
-      &nbsp; || All Rights Reserved
+      Copyright &copy; <span id="updatedYear"></span> 
+      <script>
+        let date = new Date();
+        let year = date.getFullYear();
+
+        document.getElementById("updatedYear").innerHTML = year;
+     </script>
+      &nbsp;
+      <strong><a href="https://manthan-mk.vercel.app" target="_blank"> Manthan-MK </a></strong>
+      &nbsp; || &nbsp; All Rights Reserved
     </div>
-    <div class="credits"> <a href="#">Privacy </a> </div>
-    <div class="credits"> <a href="#"> Terms </a> </div>
+    <div class="credits"> <a href="#"> &nbsp; & Terms </a> </div>
+    <div class="credits"> <a href="#">  Privacy </a> </div>
   </div>
 </footer>
 <!-- End Footer -->
