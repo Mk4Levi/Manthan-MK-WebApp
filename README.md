@@ -2,7 +2,7 @@
 
 => MK-Backend Web App is a backend app built with Javascript and it's server is built with Express.js. It has Signup and Login page where user's credentials will be stored in my MongoDB-Atlas Database.
 
-## Website Link => https://manthan-mk-web.onrender.com/
+## Website Link => https://manthan-mk-web.vercel.app
 
 ## Project's Screenshots =>
 
@@ -10,6 +10,14 @@
 ![image](./public/images/ss2.png)
 ![image](./public/images/ss3.png)
 ![image](./public/images/ss4.png)
+
+## Technologies Used
+
+- **Express.js**
+- **MongoDB**
+- **Node.js**
+- **JavaScript**
+- **Handlebars**
 
 <h2>Getting Started</h2>
 
